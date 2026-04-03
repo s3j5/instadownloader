@@ -50,6 +50,28 @@ body {
     justify-content: center;
 }
 
+.seo-text {
+    margin-top: 40px;
+    padding: 20px;
+    background: #111;
+    color: #ddd;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.seo-text h2, .seo-text h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.seo-text ul {
+    padding-left: 20px;
+}
+
+.seo-text li {
+    margin-bottom: 5px;
+}
+
 .card {
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(15px);
