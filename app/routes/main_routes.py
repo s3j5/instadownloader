@@ -7,6 +7,9 @@ main = Blueprint('main', __name__)
 def home():
     return render_template('index.html')
 
+@main.route('/sitemap.xml')
+def sitemap():
+    return app.send_static_file('sitemap.xml')
 
 @main.route('/download/instagram', methods=['POST'])
 def insta():
