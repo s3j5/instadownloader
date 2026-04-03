@@ -1,39 +1,12 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Media Downloader</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-
-<div class="container">
-  <h1>🔥 Media Downloader</h1>
-
-  <input type="text" id="url" placeholder="Paste link here">
-
-  <button onclick="downloadInsta()">Download Video</button>
-  <button onclick="downloadAudio()">🎵 Audio</button>
-
-  <audio controls>
-  <source src="${data.file_url}">
-  </audio>
-
-  <div id="result"></div>
-
-  <div id="loader" style="display:none;">⏳ Processing...</div>
-  <div id="result"></div>
-</div>
-
-<script src="{{ url_for('static', filename='script.js') }}"></script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Instagram Video Downloader - Download Reels Free</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Video Downloader - InstaSaveX</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="icon" href="/static/favicon.ico">
+
     <meta name="title" content="Instagram Video Downloader - InstaSaveX">
     <meta name="description" content="Download Instagram reels, videos and audio instantly without watermark. Fast and free tool.">
     <meta name="keywords" content="instagram downloader, reel downloader, download instagram video, save reels">
@@ -41,47 +14,52 @@
 </head>
 <body>
 
-<div class="main">
+    <div class="page-bg"></div>
 
-  <div class="seo-text">
-    <h2>Download Instagram Reels Easily</h2>
-    <p>
-    InstaSaveX allows you to download Instagram reels, videos and audio in just one click.
-    No login required, fast and free.
-    </p>
+    <main class="main-wrapper">
+        <section class="content-section">
+            <div class="seo-text">
+                <span class="badge">Fast • Free • No Login</span>
+                <h1>Download Instagram Reels Easily</h1>
+                <p>
+                    InstaSaveX allows you to download Instagram reels, videos, and audio in just one click.
+                    No login required, fast, simple, and free to use.
+                </p>
 
-    <h3>How to download Instagram reels?</h3>
-    <ul>
-        <li>Copy Instagram reel link</li>
-        <li>Paste in the box above</li>
-        <li>Click download</li>
-    </ul>
-</div>
+                <div class="steps-box">
+                    <h2>How to download Instagram reels?</h2>
+                    <ul>
+                        <li>Copy the Instagram reel link</li>
+                        <li>Paste it into the input box</li>
+                        <li>Click Video or Audio download</li>
+                    </ul>
+                </div>
+            </div>
 
-    <div class="card">
+            <div class="card">
+                <div class="card-glow"></div>
 
-        <div class="logo">
-           <img src="/static/logo.svg" alt="InstaSaveX Logo">
-           <!-- <h1>InstaSaveX</h1> -->
-        </div>
-        <p class="tagline">Download Instagram Reels in Seconds ⚡</p>
+                <div class="logo">
+                    <img src="/static/logo.svg" alt="InstaSaveX Logo">
+                </div>
 
-        <div class="input-box">
-            <input type="text" id="url" placeholder="Paste Instagram link here...">
-        </div>
+                <p class="tagline">Download Instagram Reels in Seconds ⚡</p>
 
-        <div class="btn-group">
-            <button class="video-btn" onclick="downloadInsta()">📽️ Video</button>
-            <button class="audio-btn" onclick="downloadAudio()">🎵 Audio</button>
-        </div>
+                <div class="input-box">
+                    <input type="text" id="url" placeholder="Paste Instagram link here...">
+                </div>
 
-        <div id="result"></div>
+                <div class="btn-group">
+                    <button class="video-btn" onclick="downloadInsta()">📽 Video</button>
+                    <button class="audio-btn" onclick="downloadAudio()">🎵 Audio</button>
+                </div>
 
-    </div>
+                <div id="loader" class="loader" style="display:none;">⏳ Processing...</div>
+                <div id="result"></div>
+            </div>
+        </section>
+    </main>
 
-</div>
-
-<script src="{{ url_for('static', filename='script.js') }}"></script>
-
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
